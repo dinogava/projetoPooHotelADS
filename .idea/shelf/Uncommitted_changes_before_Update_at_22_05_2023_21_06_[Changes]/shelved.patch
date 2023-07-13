@@ -1,0 +1,278 @@
+Index: src/model/Manutencao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package model;\r\n\r\nimport model.Funcionario;\r\n\r\nimport java.time.LocalDate;\r\n\r\npublic class Manutencao {\r\n    private Integer id;\r\n    private Funcionario funcionario;\r\n    private LocalDate data;\r\n    private char tipoDeManutenção;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/model/Manutencao.java b/src/model/Manutencao.java
+--- a/src/model/Manutencao.java	(revision 9909c5fea3f8c7ffe085c777dfe08ed43d99ce96)
++++ b/src/model/Manutencao.java	(date 1684800364872)
+@@ -1,12 +1,84 @@
+-package model;
++//package model;
+ 
+ import model.Funcionario;
++import model.OrdemDeServico;
+ 
+ import java.time.LocalDate;
+ 
+ public class Manutencao {
+-    private Integer id;
++    private Integer ID;
+     private Funcionario funcionario;
+     private LocalDate data;
+-    private char tipoDeManutenção;
+-}
+\ No newline at end of file
++    private String descricao;
++    private OrdemDeServico OS;
++
++    public Manutencao(Integer ID, Funcionario funcionario, LocalDate data, String descricao, OrdemDeServico OS) {
++        this.ID = ID;
++        this.funcionario = funcionario;
++        this.data = data;
++        this.descricao = descricao;
++        this.OS = OS;
++    }
++
++    public Integer getID() {
++        return ID;
++    }
++
++    public void setID(Integer ID) {
++        this.ID = ID;
++    }
++
++    public Funcionario getFuncionario() {
++        return funcionario;
++    }
++
++    public void setFuncionario(Funcionario funcionario) {
++        this.funcionario = funcionario;
++    }
++
++    public LocalDate getData() {
++        return data;
++    }
++
++    public void setData(LocalDate data) {
++        this.data = data;
++    }
++
++    public String getDescricao() {
++        return descricao;
++    }
++
++    public void setDescricao(String descricao) {
++        this.descricao = descricao;
++    }
++
++    public OrdemDeServico getOS() {
++        return OS;
++    }
++
++    public void setOS(OrdemDeServico OS) {
++        this.OS = OS;
++    }
++
++    @Override
++    public String toString() {
++        return "Manutencao{" +
++                "ID=" + ID +
++                ", funcionario=" + funcionario +
++                ", data=" + data +
++                ", descricao='" + descricao + '\'' +
++                ", OS=" + OS +
++                '}';
++    }
++}
++
++//import model.Funcionario;
++
++//import java.time.LocalDate;
++
++//public class Manutencao {
++   // private Integer id;
++  //  private Funcionario funcionario;
++   // private LocalDate data;
++   // private char tipoDeManutenção;
++//}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"025ba4ae-ba13-434d-8f80-4c41c55e2a92\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"48540b4a-ede6-474f-b21b-e9154c18da99\" />\r\n        <option name=\"url\" value=\"https://github.com/CrispimMatheuss/ProjetoFinal_ADS2_Hotel.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2PiHVd2Tcezdtd915IXDmMbPOD7\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/MARIA EDUARDA/Desktop/TrabalhoFinalHotel/ProjetoFinal_ADS2_Hotel&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"025ba4ae-ba13-434d-8f80-4c41c55e2a92\" name=\"Changes\" comment=\"\" />\r\n      <created>1683933006580</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1683933006580</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Branch Inicial\">\r\n      <created>1683933030027</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683933030027</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Branch Inicial\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Branch Inicial\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9909c5fea3f8c7ffe085c777dfe08ed43d99ce96)
++++ b/.idea/workspace.xml	(date 1684800365085)
+@@ -4,7 +4,23 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="025ba4ae-ba13-434d-8f80-4c41c55e2a92" name="Changes" comment="" />
++    <list default="true" id="025ba4ae-ba13-434d-8f80-4c41c55e2a92" name="Changes" comment="Ajuste &quot;id&quot; e alteração da pasta do QuartoDAO">
++      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/model/FormaPagamento.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repository/ConsumoDAO.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repository/HospedagemDAO.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repository/PagamentoDAO.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Funcionario.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Hospedagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Hospedagem.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Hospede.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Hospede.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Manutencao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Manutencao.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Pagamento.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Servico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Servico.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/repository/PessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/PessoaDAO.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/repository/ServicoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ServicoDAO.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -17,18 +33,21 @@
+       </list>
+     </option>
+   </component>
++  <component name="Git.Merge.Settings">
++    <option name="BRANCH" value="origin/master" />
++  </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN"
+-  }
+-}]]></component>
+   <component name="GithubPullRequestsUISettings">
+     <option name="selectedUrlAndAccountId">
+       <UrlAndAccount>
+-        <option name="accountId" value="48540b4a-ede6-474f-b21b-e9154c18da99" />
++        <option name="accountId" value="ee21ec3c-7008-4d76-b888-82acded3646c" />
+         <option name="url" value="https://github.com/CrispimMatheuss/ProjetoFinal_ADS2_Hotel.git" />
+       </UrlAndAccount>
+     </option>
+@@ -37,18 +56,30 @@
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2PiHVd2Tcezdtd915IXDmMbPOD7" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MARIA EDUARDA/Desktop/TrabalhoFinalHotel/ProjetoFinal_ADS2_Hotel&quot;
+-  }
+-}</component>
++  <component name="PropertiesComponent">
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
++  </component>
++  <component name="RunManager">
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Main" />
++      <module name="ProjetoFinal_ADS2_Hotel" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Main" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -65,11 +96,72 @@
+       <option name="project" value="LOCAL" />
+       <updated>1683933030027</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Criação do arquivo PessoaDAO e adicionados exemplos do professor no main.">
++      <created>1684195290984</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1684195290984</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Criação do QuartoDAO">
++      <created>1684196472253</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1684196472253</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Ajuste &quot;id&quot; e alteração da pasta do QuartoDAO">
++      <created>1684534453217</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1684534453217</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Criei Construtor e Getters e Setters!">
++      <created>1684279962310</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1684279962310</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Criei Construtor e Getters e Setters!">
++      <created>1684280589165</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1684280589165</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++    <option name="oldMeFiltersMigrated" value="true" />
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Branch Inicial" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Branch Inicial" />
++    <MESSAGE value="Criação do arquivo PessoaDAO e adicionados exemplos do professor no main." />
++    <MESSAGE value="Criação do QuartoDAO" />
++    <MESSAGE value="Ajuste &quot;id&quot; e alteração da pasta do QuartoDAO" />
++    <option name="LAST_COMMIT_MESSAGE" value="Ajuste &quot;id&quot; e alteração da pasta do QuartoDAO" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/Main.java</url>
++          <line>12</line>
++          <option name="timeStamp" value="3" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+ </project>
+\ No newline at end of file

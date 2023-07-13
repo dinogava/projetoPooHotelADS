@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7dda354c-3e1e-4d9a-9b05-6fbdb91b4ed0" name="Changes" comment="ajustes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="altera9" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ee21ec3c-7008-4d76-b888-82acded3646c" />
+        <option name="url" value="https://github.com/ribasmariana/ProjetoFinal_ADS2_Hotel.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2R7nVKeI0un4V69iHnMMMVH3zV5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/dinob/IdeaProjects/projetoPooHotelADS",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProjetoFinal_ADS2_Hotel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testeHospedagem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.testeHospedagem" />
+      <module name="ProjetoFinal_ADS2_Hotel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.testeHospedagem" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Alterações no main">
+      <created>1686007974753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686007974753</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Alterações no main - Seleção de hóspede e quarto">
+      <created>1686010509502</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686010509502</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Alterações no main - Seleção de hóspede e quarto">
+      <created>1686010637848</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686010637848</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Alterações no main - Criação de relatórios">
+      <created>1686182852187</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686182852187</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Alterações no main - Criação de relatórios">
+      <created>1686184935773</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686184935773</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7dda354c-3e1e-4d9a-9b05-6fbdb91b4ed0" name="Changes" comment="Alterações no main - Criação de relatórios" />
+      <created>1686610009320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686610009320</updated>
+    </task>
+    <task id="LOCAL-00006" summary="criação das classes HospedeDAO, FuncionarioDAO, colocados nelas e na classe QuartoDAO 5 cadastros de hospedes, funcionarios e quartos, 3 metodos (hospede,funcionario e quarto)ja criados no main ja feito para ainda serem puxados nos relatorios...">
+      <created>1687031712130</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687031712131</updated>
+    </task>
+    <task id="LOCAL-00007" summary="criação das classes HospedeDAO, FuncionarioDAO, colocados nelas e na classe QuartoDAO 5 cadastros de hospedes, funcionarios e quartos, 3 metodos (hospede,funcionario e quarto)ja criados no main ja feito para ainda serem puxados nos relatorios...">
+      <created>1687031783533</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687031783533</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ajustes no main para adição do consumo na hospedagem">
+      <created>1687218929711</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687218929711</updated>
+    </task>
+    <task id="LOCAL-00009" summary="exclusão da manutenção">
+      <created>1687384851609</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687384851609</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ajuste serviço">
+      <created>1687388709576</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687388709576</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ajuste checkout">
+      <created>1687389438311</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687389438311</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ajuste checkout">
+      <created>1687389495353</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687389495353</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ajustes finos conforme orientação do Lucas - Análise orientada a objetos">
+      <created>1687821969443</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687821969443</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ajustes">
+      <created>1687823825851</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1687823825851</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Alterações no main" />
+    <MESSAGE value="Alterações no main - Seleção de hóspede e quarto" />
+    <MESSAGE value="Alterações no main - Criação de relatórios" />
+    <MESSAGE value="criação das classes HospedeDAO, FuncionarioDAO, colocados nelas e na classe QuartoDAO 5 cadastros de hospedes, funcionarios e quartos, 3 metodos (hospede,funcionario e quarto)ja criados no main ja feito para ainda serem puxados nos relatorios..." />
+    <MESSAGE value="Ajustes no main para adição do consumo na hospedagem" />
+    <MESSAGE value="exclusão da manutenção" />
+    <MESSAGE value="ajuste serviço" />
+    <MESSAGE value="ajuste checkout" />
+    <MESSAGE value="ajustes finos conforme orientação do Lucas - Análise orientada a objetos" />
+    <MESSAGE value="ajustes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes" />
+  </component>
+</project>
